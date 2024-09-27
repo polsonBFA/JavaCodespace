@@ -1,6 +1,6 @@
 public class WrapperClass {
    public static void main(String[] args) {
-      Integer obj1 = new Integer(3);
+     // Integer obj1 = new Integer(3);
       Integer obj2 = 5;
       int x = obj1;
       Integer sum = obj1.intValue() + obj2.intValue();
