@@ -7,7 +7,7 @@ public class Main {
       
       myStove.cook30();
       myStove2.cook30();
-      
+      myStove.cook(120, 200);
       String test = new String("Hello");
       System.out.println(test);
     }
