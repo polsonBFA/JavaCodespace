@@ -8,5 +8,6 @@ public class Magic8Ball
       System.out.println("What is a question that you would like to ask? ");
       String question = scan.nextLine();
       System.out.println(question);
+      System.out.println("Dunno");
    }
 }
