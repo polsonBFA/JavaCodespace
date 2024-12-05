@@ -10,5 +10,6 @@ public class Magic8Ball
       String question = scan.nextLine();
       System.out.println(question);
       System.out.println("Dunno");
+      scan.close();
    }
 }
