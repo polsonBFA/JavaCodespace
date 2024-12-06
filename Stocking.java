@@ -11,9 +11,8 @@ public class Stocking {
 
 class TestStocking{
     public static void main(String[] args) {
-        Stocking myStocking = new Stocking();
+        
        
-  
         
     }
 }
