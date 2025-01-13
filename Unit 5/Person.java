@@ -19,10 +19,15 @@ public class Person {
       System.out.println("Email: " + email);
       System.out.println("Phone: " + phone);
    }
+   public String toString()
+   {
+      return "Name: " + name + "\nEmail: " + email +"\n"+"Phone: " + phone;
+   }
    public static void main(String[] args)
    {
       Person person1 = new Person("Peter", "peter.olson@bfacademy.de", "112");
       person1.print();
+      System.out.println(person1);
    }
 
 }

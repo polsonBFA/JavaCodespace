@@ -30,7 +30,7 @@ public class Reassess {
             System.out.println(isLater(2, 11, 2025, 3,11, 2024));
             System.out.println(isLater(10, 12, 2024, 3,11, 2024));
         }
-      
+         
         /*Exercise 1 */
         public static boolean isEven (int x)
         {
