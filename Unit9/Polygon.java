@@ -1,5 +1,4 @@
 package Unit9;
-import java.util.ArrayList;
 
 public class Polygon {
   
@@ -27,29 +26,47 @@ public class Polygon {
     {
         return numSides;
     }
+
+    public String compareSides(Polygon p2)
+    {
+        if (this.getSides() < p2.getSides())
+        {
+            return this.shapeName + " has fewer sides than " + p2.getName() + ".";
+        }
+        else if (this.getSides() > p2.getSides())
+        {
+           return this.shapeName + " has more sides than " + p2.shapeName + ".";
+        }
+        return this.shapeName + " has the same number of sides as " + p2.getName() + ".";
+    }
     public String toString()
     {
         return "I am a " + shapeName + " with " + numSides + " sides.";
     }
     public static void main(String[] args)
     {
-        Polygon p1 = new Polygon(5, "Pentagon");
-        EquilateralTriangle t1 = new EquilateralTriangle(3);
-        Triangle t2 = new Triangle(3,4,5);
-        Square s1 = new Square();
+    //     Polygon p1 = new Polygon(5, "Pentagon");
+    //     EquilateralTriangle t1 = new EquilateralTriangle(3);
+    //     Triangle t2 = new Triangle(3,4,5);
+    //     Square s1 = new Square();
 
-        System.out.println(p1.getName() + "-" + p1.getSides());
-        //System.out.println(s1);
-       // System.out.println(t1);
+    //     System.out.println(p1.getName() + "-" + p1.getSides());
+    //     //System.out.println(s1);
+    //    // System.out.println(t1);
+    //     ArrayList<Polygon> shapes = new ArrayList<Polygon>();
+    //     shapes.add(p1);
+    //     shapes.add(t1);
+    //     shapes.add(t2);
+    //     shapes.add(s1);
 
-        ArrayList<Polygon> shapes = new ArrayList<Polygon>();
-        shapes.add(p1);
-        shapes.add(t1);
-        shapes.add(t2);
-        shapes.add(s1);
-
-        for(Polygon item:shapes)
-            System.out.println(item);
+       EquilateralTriangle t1 = new EquilateralTriangle(3);
+       Triangle t2 = new EquilateralTriangle(4);
+       Polygon t3 = new EquilateralTriangle(2);
+       System.out.println(t1);
+       System.out.println(t2);
+       System.out.println(t3);
+       
+        
 
     }
 }
@@ -80,6 +97,10 @@ class EquilateralTriangle extends Triangle
     public EquilateralTriangle(int sideLength)
     {
         super(sideLength, sideLength, sideLength);
+    }
+    public String toString()
+    {
+        return "EQ" + super.toString();
     }
 }
 
